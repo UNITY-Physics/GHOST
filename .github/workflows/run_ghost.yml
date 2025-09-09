@@ -1,4 +1,4 @@
-name: Curate phantom data
+name: Trigger Ghost runs
 
 on:
   schedule:
