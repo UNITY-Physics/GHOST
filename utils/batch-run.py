@@ -17,8 +17,7 @@ def is_ghost_analysis(analysis):
         """
         # Check gear name - must be exactly 'ghoststats' gear
         if analysis.label:
-            label = analysis.label.lower()
-            if "ghost/" in label:
+            if analysis.gear_info.name == 'ghost':
                 return True
             
         return False
