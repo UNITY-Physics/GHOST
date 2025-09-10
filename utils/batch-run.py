@@ -11,14 +11,14 @@ import logging
 
 log = logging.getLogger(__name__)
 
-def is_ghost_stats_analysis(analysis):
+def is_ghost_analysis(analysis):
         """
         Check if an analysis is a ghost analysis by checking gear name or analysis label.
         """
         # Check gear name - must be exactly 'ghoststats' gear
         if analysis.label:
             label = analysis.label.lower()
-            if "ghost/0.0.5" in label:
+            if "ghost/" in label:
                 return True
             
         return False
